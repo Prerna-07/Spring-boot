@@ -38,7 +38,7 @@ public class EmployeeService {
     {
         if(employeeRepository.existsById(employee.getId()))
         {
-            employeeRepository.delete(employee);
+//            employeeRepository.delete(employee);
             employeeRepository.save(employee);
             return "Id updated";
         }
