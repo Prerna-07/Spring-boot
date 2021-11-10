@@ -20,17 +20,17 @@ public class EmployeeController {
 
     }
     @PostMapping("/addemp")
-    public String saveEmployee(Employee employee)
+    public String saveEmployee(@RequestBody Employee employee)
     {
         return employeeService.saveEmployee(employee);
     }
     @PutMapping("/updateemp")
-    public String updateEmployee(Employee employee)
+    public String updateEmployee(@RequestBody Employee employee)
     {
         return employeeService.updateEmployee(employee);
     }
     @DeleteMapping("/deleteemp")
-    public String deleteEmployee(Employee employee)
+    public String deleteEmployee(@RequestBody Employee employee)
     {
         return employeeService.deleteEmployee(employee);
     }
